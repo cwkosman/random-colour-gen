@@ -1,10 +1,6 @@
-function generateColour () {
-  function generateHex() {
-    return (Math.floor(Math.random() * Math.pow(256,3)));
-  }
-
-console.log('#' + generateHex().toString(16));
-
+function generateHex() {
+  var hex = Math.floor(Math.random() * Math.pow(256,3));
+  return ('#' + hex.toString(16));
 }
 
-generateColour();
+console.log(generateHex());
